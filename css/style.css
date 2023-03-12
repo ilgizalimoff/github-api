@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.search__block {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: 20px;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+}
+
+input[type="text"] {
+    margin: 15px 0;
+    width: 200px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(126, 123, 123);
+}
+
+hr {
+    border: none;
+    color: black;
+    background-color: black;
+    height: 1px;
+}
+
+.results {
+    font-size: 16px;
+}
+
+.results a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.results h2 {
+    text-align: center;
+}
+
+.results img {
+    width: 70px;
+    height: 70px;
+}
+
+.result__item {
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results div:first-child {
+    margin: 0;
+}
+
+.left {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repo__owner {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.right {
+    text-align: right;
+    width: 70%;
+}
+
+.repo__name {
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.repo__desc {
+    margin: 10px 0 10px 10px;
+    color: rgb(83, 81, 81);
+}
+
+.repo__desc p {
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+@media(max-width:480px) {
+
+    .repo__owner,
+    .repo__name {
+        font-size: 12px;
+    }
+
+    .right {
+        width: 60%;
+    }
+
+    .left {
+        width: 35%;
+    }
+
+    .results img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .repo__desc p {
+        font-size: 10px;
+    }
+}
